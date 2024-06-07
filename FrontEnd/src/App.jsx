@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Shop from './Pages/Shop'
 
 // Placeholder components (you can replace these with your actual components)
 const Home = () => <div>Home Page</div>
@@ -18,7 +19,7 @@ function App() {
         <Navbar />
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
         <Route path="/products" element={<Products />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />

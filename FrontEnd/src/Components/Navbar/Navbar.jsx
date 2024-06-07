@@ -11,19 +11,19 @@ const Navbar = () => {
         <div className="navbar">
             <div className="nav-logo">
                 <img src={logo_icon} alt="Logo"/>
-                <p>Kyoto</p>
+                <p >Kyoto</p>
             </div>
             <ul className="nav-menu">
                 <li key="shop" onClick={() => { setMenu("shop") }}>
-                    <Link to='/'>Shop</Link>
+                    <Link to='/shop'style={{textDecoration:'none'}}>Shop</Link>
                     {menu === "shop" && <hr/>}
                 </li>
                 <li key="kurtis" onClick={() => { setMenu("kurtis") }}>
-                    <Link to='/products'>Kurtis</Link>
+                    <Link to='/products' style={{textDecoration:'none'}}>Kurtis</Link>
                     {menu === "kurtis" && <hr/>}
                 </li>
                 <li key="saris" onClick={() => { setMenu("saris") }}>
-                    <Link to='/products'>Saris</Link>
+                    <Link to='/products'style={{textDecoration:'none'}}>Saris</Link>
                     {menu === "saris" && <hr/>}
                 </li>
             </ul>
