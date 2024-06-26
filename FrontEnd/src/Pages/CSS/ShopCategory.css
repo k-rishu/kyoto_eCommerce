@@ -1,0 +1,92 @@
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 100%; /* Make the banner span the full width */
+   
+}
+
+.shopcategory-indexSort {
+    display: flex;
+    margin: 0 auto; /* Center the index sort bar */
+    justify-content: space-between; /* Adjust spacing */
+    align-items: center;
+    padding: 0 20px; /* Add some padding for spacing */
+    width: 100%; /* Make it span the full width */
+    width: calc(100% + 180px);
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin: 0 -90px;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    margin: 0 -90px;
+}
+
+.shopcategory-indexSort p span {
+    font-weight: 600;
+}
+
+.shopcategory-products {
+    margin: 20px auto; /* Center the products grid */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns grid */
+    gap: 20px; /* Add gap between items */
+    padding: 0 20px; /* Add some padding for spacing */
+    width: 100%; /* Make it span the full width */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin: 0 -90px;
+}
+
+.btn {
+    font-size: 17px;
+    font-weight: 800;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #030201;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 4px;
+    background-color: #090908;
+    transition: 0.5s ease;
+  }
+  
+  .btn:hover {
+    color: #1e1e2b;
+    transition-delay: 0.5s;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #e9b12e;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+  
