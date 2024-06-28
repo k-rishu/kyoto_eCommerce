@@ -9,13 +9,13 @@ import men_banner from './Components/Assets/banner_mens.png'
 import women_banner from './Components/Assets/banner_women.png'
 import LoginSignup from './Pages/LoginSignup'
 import Product from './Pages/Product'
-
+import Cart from './Pages/Cart'
 
 // Placeholder components (you can replace these with your actual components)
 const Home = () => <div>Home Page</div>
 const Products = () => <div>Products Page</div>
 const Login = () => <div>Login Page</div>
-const Cart = () => <div>Cart Page</div>
+
 
 function App() {
   const [count, setCount] = useState(0)

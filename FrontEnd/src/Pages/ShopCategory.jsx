@@ -38,9 +38,9 @@ export const ShopCategory = (props) => {
                     }
                 })}
             </div>
-            <dib >
+            <div >
                 <button className="btn">Explore more</button>
-            </dib>
+            </div>
         </div>
     )
 }
