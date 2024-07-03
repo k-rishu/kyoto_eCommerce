@@ -1,4 +1,4 @@
-.newsletter{
+/* .newsletter{
     width: 65%;
     height: 40vh;
     display: flex;
@@ -53,4 +53,166 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
+} */
+
+.newsletter {
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0 20px; /* Adjusted padding */
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 20px; /* Adjusted gap */
+    text-align: center;
+}
+
+.newsletter h1 {
+    color: #454545;
+    font-size: 40px; /* Adjusted font size */
+    font-weight: 600;
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 18px; /* Adjusted font size */
+    max-width: 600px; /* Limit width for readability */
+    margin: 0 auto; /* Center align */
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    max-width: 100%; /* Adjusted for responsiveness */
+    width: 600px; /* Adjusted width */
+    height: 60px; /* Reduced height */
+    border-radius: 40px; /* Reduced border radius */
+    border: 1px solid #eee;
+    padding: 0 20px; /* Adjusted padding */
+}
+
+.newsletter input {
+    width: 300px; /* Adjusted width */
+    margin-left: 20px; /* Adjusted margin */
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 14px; /* Adjusted font size */
+}
+
+.newsletter div button {
+    width: 150px; /* Adjusted width */
+    height: 60px; /* Reduced height */
+    border-radius: 40px; /* Reduced border radius */
+    background: black;
+    color: white;
+    font-size: 14px; /* Adjusted font size */
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablets and large mobile devices (landscape) */
+@media (max-width: 1024px) {
+    .newsletter {
+        width: 80%;
+        padding: 0 15px; /* Adjusted padding */
+    }
+
+    .newsletter h1 {
+        font-size: 32px; /* Adjusted font size */
+    }
+
+    .newsletter p {
+        font-size: 16px; /* Adjusted font size */
+    }
+
+    .newsletter div {
+        width: 100%;
+        max-width: 500px; /* Adjusted max-width */
+        padding: 0 15px; /* Adjusted padding */
+    }
+
+    .newsletter input {
+        width: 200px; /* Adjusted width */
+        font-size: 12px; /* Adjusted font size */
+    }
+
+    .newsletter div button {
+        width: 120px; /* Adjusted width */
+        height: 50px; /* Reduced height */
+        font-size: 12px; /* Adjusted font size */
+    }
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 768px) {
+    .newsletter {
+        width: 90%;
+        padding: 0 10px; /* Adjusted padding */
+    }
+
+    .newsletter h1 {
+        font-size: 28px; /* Adjusted font size */
+    }
+
+    .newsletter p {
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .newsletter div {
+        width: 100%;
+        max-width: 400px; /* Adjusted max-width */
+        padding: 0 10px; /* Adjusted padding */
+    }
+
+    .newsletter input {
+        width: 180px; /* Adjusted width */
+        font-size: 12px; /* Adjusted font size */
+    }
+
+    .newsletter div button {
+        width: 100px; /* Adjusted width */
+        height: 50px; /* Reduced height */
+        font-size: 12px; /* Adjusted font size */
+    }
+}
+
+/* Small mobile devices (landscape) */
+@media (max-width: 480px) {
+    .newsletter {
+        width: 100%;
+        padding: 0 5px; /* Adjusted padding */
+    }
+
+    .newsletter h1 {
+        font-size: 24px; /* Adjusted font size */
+    }
+
+    .newsletter p {
+        font-size: 12px; /* Adjusted font size */
+    }
+
+    .newsletter div {
+        width: 100%;
+        max-width: 300px; /* Adjusted max-width */
+        padding: 0 5px; /* Adjusted padding */
+    }
+
+    .newsletter input {
+        width: 150px; /* Adjusted width */
+        font-size: 10px; /* Adjusted font size */
+    }
+
+    .newsletter div button {
+        width: 80px; /* Adjusted width */
+        height: 40px; /* Reduced height */
+        font-size: 10px; /* Adjusted font size */
+    }
 }
